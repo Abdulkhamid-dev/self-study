@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="btn_div">
+      <button id="myBtn">ADD Todo</button
+      ><button onclick="clearAll()">Clear All</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>New Todo item</h2>
+        </div>
+        <div class="modal-body">
+          <form id="form">
+            <input
+              type="text"
+              class="todo_inp"
+              id="doName"
+              name="to_do"
+              placeholder="Todo name"
+            />
+            <select name="icon_category" class="todo_inp" id="doCategory">
+              <option disabled selected>Category type to do</option>
+              <option value="Sport">Sport</option>
+              <option value="Education">Education</option>
+              <option value="Interteiment">Interteiment</option>
+              <option value="Chores">Chores</option>
+            </select>
+            <textarea
+              class="description"
+              name="description"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+            <input
+              type="datetime-local"
+              class="todo_inp"
+              name="date_inp"
+              id="inp_time"
+            />
+            <select name="status_category" class="todo_inp" id="doStatus">
+              <option disabled selected>Select status</option>
+              <option value="Not started">Not started</option>
+              <option value="Started">Started</option>
+              <option value="Complited">Complited</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <div>
+              <button type="submit" class="btn_crt">Create</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="myModalSecond" class="modal-second">
+      <div class="modal-content-second">
+        <div class="modal-header-second">
+          <span class="close-second">&times;</span>
+          <h2>Update Todo item</h2>
+        </div>
+        <div class="modal-body-second">
+          <form id="form-second">
+            <input
+              type="text"
+              class="todo_inp"
+              id="doName-second"
+              name="to_do"
+              placeholder="Todo name"
+            />
+            <select
+              name="icon_category"
+              class="todo_inp"
+              id="doCategory-second"
+            >
+              <option disabled selected>Category type to do</option>
+              <option value="Sport">Sport</option>
+              <option value="Education">Education</option>
+              <option value="Interteiment">Interteiment</option>
+              <option value="Chores">Chores</option>
+            </select>
+            <textarea
+              class="description-second"
+              name="description"
+              cols="30"
+              rows="10"
+              placeholder="Description"
+            ></textarea>
+            <input
+              type="datetime-local"
+              class="todo_inp"
+              name="date_inp"
+              id="inp_time-second"
+            />
+            <select
+              name="status_category"
+              class="todo_inp"
+              id="doStatus-second"
+            >
+              <option disabled selected>Select status</option>
+              <option value="Not started">Not started</option>
+              <option value="Started">Started</option>
+              <option value="Complited">Complited</option>
+              <option value="Canceled">Canceled</option>
+            </select>
+            <div>
+              <button type="submit" class="btn_crt">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="todos_list" id="todo_list"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
